@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Exception;
+use DB;
 class SushiController extends Controller
 {
     public function index(){
@@ -39,5 +40,10 @@ class SushiController extends Controller
         catch(Exception $e){
             return redirect('/sushi/create');
         }
+    }
+
+    public function beschikbaar(){
+        $tijden = DB::table('timetable')->where('telefoonnummer', NULL)->get();
+        return view('sushi.create', ['tijden' => $tijden]);
     }
 }

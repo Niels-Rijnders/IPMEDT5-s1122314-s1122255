@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware(['auth','admin'])->group(function() {
-    Route::get('/sushi/create', [App\Http\Controllers\SushiController::class, 'create']);
+Route::middleware(['auth'])->group(function() {
+    Route::get('/sushi/create', [App\Http\Controllers\SushiController::class, 'beschikbaar']);
     Route::post('/sushi', [App\Http\Controllers\SushiController::class, 'store']);
 });
 
