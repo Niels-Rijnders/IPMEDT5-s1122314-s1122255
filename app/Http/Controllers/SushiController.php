@@ -27,19 +27,14 @@ class SushiController extends Controller
         ]);
     }
 
-    public function store(Request $request, \App\Models\Sushi $sushi){
-        $sushi->name = $request->input('name');
-        $sushi->kind = $request->input('kind');
-        $sushi->description = $request->input('description');
-        $sushi->image = $request->input('image');
+    public function store(Request $request, \App\Models\Timetable $timetable){
+        $timetable->time = $request->input('time');
+        $timetable->telefoonnummer = $request->input('telefoonnummer');
         
-        try{
-            $sushi->save();
+
+            DB::update("update timetable set telefoonnummer = '$timetable->telefoonnummer' where time = '$timetable->time'");
             return redirect('/');
-        }
-        catch(Exception $e){
-            return redirect('/sushi/create');
-        }
+
     }
 
     public function beschikbaar(){

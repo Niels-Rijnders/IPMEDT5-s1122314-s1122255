@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Sushi extends Model
+class Timetable extends Model
 {
    protected $table = 'timetable';
    public $timestamps = false;
