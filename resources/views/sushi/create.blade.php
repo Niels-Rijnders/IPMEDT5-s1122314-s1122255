@@ -11,22 +11,17 @@ Creeër Sushi
         @csrf 
 
         <section class="create-form__section">
-            <label for="name">Naam </label>
-            <input class="create-form__input" name="name" id="name" type="text" />
+            <label for="telefoonnummer">telefoonnummer </label>
+            <input class="create-form__input" name="telefoonnummer" id="telefoonnummer" type="number" />
         </section>
 
         <section class="create-form__section">
-            <label for="kind">Soort </label>
-            <select class="create-form__input" id="kind" name="kind">
+            <label for="kind">Tijdslot </label>
+            <select class="create-form__input" id="time" name="time">
                 @foreach($tijden as $tijd)
                     <option value={{$tijd->time}}> {{$tijd->time}} </option>
                 @endforeach
             </select>
-        </section>
-
-        <section class="create-form__section">
-            <label for="description">Description </label>
-            <textarea class="create-form__input create-form__input--big" name="description" id="description" type="text-area"> </textarea>
         </section>
 
         <section class="create-form__section">
