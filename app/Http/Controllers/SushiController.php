@@ -33,12 +33,17 @@ class SushiController extends Controller
         
 
             DB::update("update timetable set telefoonnummer = '$timetable->telefoonnummer' where time = '$timetable->time'");
-            return redirect('/');
+            return redirect('/tabel');
 
     }
 
     public function beschikbaar(){
         $tijden = DB::table('timetable')->where('telefoonnummer', NULL)->get();
         return view('sushi.create', ['tijden' => $tijden]);
+    }
+
+    public function tabel(){
+        $tijden = DB::table('timetable')->where('telefoonnummer', NULL)->get();
+        return view('sushi.timetable', ['tijden' => $tijden]);
     }
 }

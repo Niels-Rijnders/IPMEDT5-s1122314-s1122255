@@ -23,10 +23,10 @@ Creeër Sushi
                 @endforeach
             </select>
         </section>
-
         <section class="create-form__section">
             <button class="create-form__button type="submit">Sushi aanmaken</button>
         </section>
     </form>
+    <button class="sushiCard__button " onclick="window.location.href='/tabel'">Terug naar de tabel</button>
 </article>
 @endsection

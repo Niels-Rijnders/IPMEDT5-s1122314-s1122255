@@ -22,6 +22,7 @@ Route::middleware(['auth'])->group(function() {
     Route::get('/sushi', [\App\Http\Controllers\SushiController::class,'index'])->middleware(['auth']);
     Route::get('/sushi/{id}', [\App\Http\Controllers\SushiController::class,'show']);
     Route::get('/', [\App\Http\Controllers\SushiController::class,'index'])->middleware(['auth']);
+    Route::get('/tabel', [\App\Http\Controllers\SushiController::class, 'tabel']);
 });
 
 Route::middleware(['auth','age'])->group(function() {
