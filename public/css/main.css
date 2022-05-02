@@ -12,7 +12,7 @@ html{
 body{
     font-size: 1.8rem;
     padding: 2rem;
-    background: #86cfbf;
+    background: #005a47;
     font-family: sans-serif;
 }
 
@@ -76,7 +76,7 @@ body{
     width: 25rem;
     height: 6rem;
     box-sizing: border-box;
-    background: #03d2b3;
+    background: #039172;
     border: none;
     color: #eeeeee;
     box-shadow: 0 0 5rem rgba(7, 104, 159, 0.7);
@@ -239,7 +239,7 @@ body{
     width: 25rem;
     height: 6rem;
     box-sizing: border-box;
-    background: #03d2b3;
+    background: #039172;
     border: none;
     color: #eeeeee;
     box-shadow: 0 0 5rem rgba(7, 104, 159, 0.7);
@@ -275,8 +275,8 @@ body{
 }
 
 .tabel{
-    background: rgb(134,207,191);
-    background: linear-gradient(0deg, rgba(134,207,191,1) 33%, rgba(255,10,0,1) 33%, rgba(255,10,0,1) 47%, rgba(134,207,191,1) 47%, rgba(134,207,191,1) 54%, rgba(255,10,0,1) 54%, rgba(255,10,0,1) 68%, rgba(134,207,191,1) 68%);
+    background: rgb(0,90,71);
+    background: linear-gradient(0deg, rgba(0,90,71,1) 20%, rgba(255,10,0,1) 20%, rgba(255,10,0,1) 40%, rgba(0,90,71,1) 40%, rgba(0,90,71,1) 60%, rgba(255,10,0,1) 60%, rgba(255,10,0,1) 80%, rgba(0,90,71,1) 81%);
 }
 
 .u-grid-gap-2{
