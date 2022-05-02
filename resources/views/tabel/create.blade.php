@@ -2,12 +2,12 @@
 
 
 @section('title')
-Creeër Sushi
+Creeër tabel
 @endsection
 
 @section('content')
 <article class="create-form a-popup">
-    <form class="create-form__form" action="/sushi" method="POST">
+    <form class="create-form__form" action="/tabel" method="POST">
         @csrf 
 
         <section class="create-form__section">
@@ -24,9 +24,9 @@ Creeër Sushi
             </select>
         </section>
         <section class="create-form__section">
-            <button class="create-form__button type="submit">Sushi aanmaken</button>
+            <button class="create-form__button type="submit">tabel aanmaken</button>
         </section>
     </form>
-    <button class="sushiCard__button " onclick="window.location.href='/tabel'">Terug naar de tabel</button>
+    <button class="tabelCard__button " onclick="window.location.href='/tabel'">Terug naar de tabel</button>
 </article>
 @endsection

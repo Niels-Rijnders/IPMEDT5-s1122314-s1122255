@@ -14,15 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware(['auth'])->group(function() {
-    Route::get('/sushi/create', [App\Http\Controllers\SushiController::class, 'beschikbaar']);
-    Route::post('/sushi', [App\Http\Controllers\SushiController::class, 'store']);
+    Route::get('/tabel/create', [App\Http\Controllers\tabelController::class, 'beschikbaar']);
+    Route::post('/tabel', [App\Http\Controllers\tabelController::class, 'store']);
 });
 
 Route::middleware(['auth'])->group(function() {
-    Route::get('/sushi', [\App\Http\Controllers\SushiController::class,'index'])->middleware(['auth']);
-    Route::get('/sushi/{id}', [\App\Http\Controllers\SushiController::class,'show']);
-    Route::get('/', [\App\Http\Controllers\SushiController::class,'index'])->middleware(['auth']);
-    Route::get('/tabel', [\App\Http\Controllers\SushiController::class, 'tabel']);
+    Route::get('/tabel', [\App\Http\Controllers\tabelController::class,'index'])->middleware(['auth']);
+    Route::get('/tabel/{id}', [\App\Http\Controllers\tabelController::class,'show']);
+    Route::get('/', [\App\Http\Controllers\tabelController::class,'tabel'])->middleware(['auth']);
+    Route::get('/tabel', [\App\Http\Controllers\tabelController::class, 'tabel']);
 });
 
 Route::middleware(['auth','age'])->group(function() {

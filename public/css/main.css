@@ -16,7 +16,7 @@ body{
     font-family: sans-serif;
 }
 
-.sushiCard{
+.tabelCard{
     width: 50vw;
     height: 80vh;
     margin: 0 auto;
@@ -25,18 +25,18 @@ body{
 }
 
 @media(max-width: 37.5rem){
-    .sushiCard{
+    .tabelCard{
         width: 35rem;
     }
 }
 
 @media(max-width: 25rem){
-    .sushiCard{
+    .tabelCard{
         width: 25rem;
     }
 }
 
-.sushiCard::after{
+.tabelCard::after{
     content: "";
     width: 5rem;
     height: 5rem;
@@ -47,18 +47,18 @@ body{
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
 }
 
-.sushiCard__figure{
+.tabelCard__figure{
     width: 100%;
     height: 60%;
 }
 
-.sushiCard__image{
+.tabelCard__image{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.sushiCard__text{
+.tabelCard__text{
     padding-left: 2rem;
     color: #eeeeee;
     height: 20%;
@@ -66,12 +66,12 @@ body{
     align-items: center;
 }
 
-.sushiCard__btnSection{
+.tabelCard__btnSection{
     height: 20%;
     padding-left: 2rem;
 }
 
-.sushiCard__button{
+.tabelCard__button{
     font-size: 120%;
     width: 25rem;
     height: 6rem;
@@ -84,18 +84,18 @@ body{
 }
 
 @media(max-width: 37.5rem){
-    .sushiCard__button{
+    .tabelCard__button{
         width: 15rem;
     }
 }
 
-.sushiCard__back__to__home{
+.tabelCard__back__to__home{
     display: block;
     margin-top: 2rem;
     color: #eeeeee;
 }
 
-.sushiCard__button:hover{
+.tabelCard__button:hover{
     cursor: pointer;
     box-shadow: 0 0 5rem rgba(7, 104, 159, 1);
 }
@@ -167,7 +167,7 @@ body{
 }
 
 
-/* style for kind-of-sushi */
+/* style for kind-of-tabel */
 .gridCard::after{
     content: "";
     width: 10%;
@@ -178,23 +178,23 @@ body{
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
 }
 
-.gridCard[data-kind-of-sushi="Maki"]::after{
+.gridCard[data-kind-of-tabel="Maki"]::after{
     background: #f67280;
 }
 
-.gridCard[data-kind-of-sushi="Nigiri"]::after{
+.gridCard[data-kind-of-tabel="Nigiri"]::after{
     background: #f6f7d7;
 }
 
-.gridCard[data-kind-of-sushi="Sashimi"]::after{
+.gridCard[data-kind-of-tabel="Sashimi"]::after{
     background: #ff5722;
 }
 
-.gridCard[data-kind-of-sushi="Temaki"]::after{
+.gridCard[data-kind-of-tabel="Temaki"]::after{
     background: #f73859;
 }
 
-.gridCard[data-kind-of-sushi="Uramaki"]::after{
+.gridCard[data-kind-of-tabel="Uramaki"]::after{
     background: #0c056d;
 }
 

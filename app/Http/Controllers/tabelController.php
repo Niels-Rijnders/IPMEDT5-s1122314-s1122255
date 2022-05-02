@@ -5,24 +5,24 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Exception;
 use DB;
-class SushiController extends Controller
+class tabelController extends Controller
 {
     public function index(){
-        return view('sushi.index',[
-            'sushi' => \App\Models\Sushi::all()
+        return view('tabel.index',[
+            'tabel' => \App\Models\tabel::all()
         ]);
     }
     
     public function show($id){
 
-        return view('sushi.show', [
-            'sushi' => \App\Models\Sushi::find($id),
+        return view('tabel.show', [
+            'tabel' => \App\Models\tabel::find($id),
         ]);
     }
 
     public function create(){
-        return view('sushi.create', [
-            'kind_of_sushi' => \App\Models\KindOfSushi::all(),
+        return view('tabel.create', [
+            'kind_of_tabel' => \App\Models\KindOftabel::all(),
             'images' => \App\Models\Image::all(),
         ]);
     }
@@ -39,11 +39,11 @@ class SushiController extends Controller
 
     public function beschikbaar(){
         $tijden = DB::table('timetable')->where('telefoonnummer', NULL)->get();
-        return view('sushi.create', ['tijden' => $tijden]);
+        return view('tabel.create', ['tijden' => $tijden]);
     }
 
     public function tabel(){
         $tijden = DB::table('timetable')->where('telefoonnummer', NULL)->get();
-        return view('sushi.timetable', ['tijden' => $tijden]);
+        return view('tabel.timetable', ['tijden' => $tijden]);
     }
 }
