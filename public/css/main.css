@@ -276,7 +276,7 @@ body{
 
 .tabel{
     background: rgb(0,90,71);
-    background: linear-gradient(0deg, rgba(0,90,71,1) 20%, rgba(255,10,0,1) 20%, rgba(255,10,0,1) 40%, rgba(0,90,71,1) 40%, rgba(0,90,71,1) 60%, rgba(255,10,0,1) 60%, rgba(255,10,0,1) 80%, rgba(0,90,71,1) 81%);
+    background: linear-gradient(0deg, rgba(0,90,71,1) 20%, rgba(46, 204, 113) 20%, rgba(46, 204, 113) 40%, rgba(0,90,71,1) 40%, rgba(0,90,71,1) 60%, rgba(46, 204, 113) 60%, rgba(46, 204, 113) 80%, rgba(0,90,71,1) 81%);
 }
 
 .u-grid-gap-2{

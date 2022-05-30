@@ -43,7 +43,7 @@ class tabelController extends Controller
     }
 
     public function tabel(){
-        $tijden = DB::table('timetable')->where('telefoonnummer', NULL)->get();
+        $tijden = DB::table('timetable')->get();
         return view('tabel.timetable', ['tijden' => $tijden]);
     }
 }

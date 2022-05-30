@@ -1,42 +1,65 @@
-let checkbox_maki = document.getElementById("maki");
-let checkbox_sashimi = document.getElementById("sashimi");
 let list_of_tabel = document.getElementsByTagName("li");
+let button_ochtend = document.getElementById("ochtend");
+let button_middag = document.getElementById("middag");
+let button_namiddag = document.getElementById("namiddag");
+let button_alles = document.getElementById("alles");
 
-checkbox_maki.checked = true;
-checkbox_sashimi.checked = true;
+let tijden = document.querySelectorAll("h2");
+let telefoonnummer = document.querySelectorAll("div");
+console.log(telefoonnummer[1].innerHTML);
 
-for (let i = 0; i < list_of_tabel.length; i++){
-    list_of_tabel[i].style.display = "";
+//tijden[73].style.display = "none";
+
+for(let i = 0; i < 108; i++){
+    telefoonnummer[i].style.display = "none";
+    if(!telefoonnummer.innerHTML === " "){
+        tijden[i].style.color = 'red';        
+    }
 }
 
-checkbox_maki.addEventListener('change', function(){
-    if(checkbox_maki.checked){
-        for( let i = 0; i < list_of_tabel.length; i++){
-            if (list_of_tabel[i].dataset.kindOftabel == 'Maki'){
-                list_of_tabel[i].style.display = '';
-            }
+function ochtendButton(){
+    i = 0;
+    while(i < 109){
+        if(i > 36){
+            tijden[i].style.display = "none";
+            i++;
+        }else{
+            i++;
+            tijden[i].style.display = "";
         }
     }
-    else{
-        for( let i = 0; i < list_of_tabel.length; i++){
-            if (list_of_tabel[i].dataset.kindOftabel == 'Maki'){
-                list_of_tabel[i].style.display = 'none';
-            }
-    }
-}});
+}
 
-checkbox_sashimi.addEventListener('change', function(){
-    if(checkbox_sashimi.checked){
-        for( let i = 0; i < list_of_tabel.length; i++){
-            if (list_of_tabel[i].dataset.kindOftabel == 'Sashimi'){
-                list_of_tabel[i].style.display = '';
-            }
+function middagButton(){
+    i = 0;
+    while(i < 109){
+        if(i < 36 || i > 73){
+            tijden[i].style.display = "none";
+            i++;
+        }else{
+            i++;
+            tijden[i].style.display = "";
         }
     }
-    else{
-        for( let i = 0; i < list_of_tabel.length; i++){
-            if (list_of_tabel[i].dataset.kindOftabel == 'Sashimi'){
-                list_of_tabel[i].style.display = 'none';
-            }
+}
+
+function namiddagButton(){
+    i = 0;
+    while(i < 109){
+        if(i < 73){
+            tijden[i].style.display = "none";
+            i++;
+        }else{
+            i++;
+            tijden[i].style.display = "";
+        }
     }
-}});
+}
+
+function allesButton(){
+    i = 0;
+    while(i < 109){
+        i++;
+        tijden[i].style.display = "";
+    }
+}
