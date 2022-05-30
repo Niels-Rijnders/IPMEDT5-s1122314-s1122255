@@ -19,8 +19,10 @@ class TimetableSeeder extends Seeder
 
         while($timehour <= 17.00){
             if($timeminute <= 0.55){
+                $time = $timehour + $timeminute;
+                $time = number_format($time, 2);
                 DB::table('timetable')->insert([
-                    'time' => $timehour + $timeminute,
+                    'time' => $time,
                 ]);
                 $timeminute = $timeminute + 0.05;
             } else{

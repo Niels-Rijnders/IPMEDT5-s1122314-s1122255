@@ -9,6 +9,7 @@ class Timetable extends Model
 {
    protected $table = 'timetable';
    public $timestamps = false;
+   public $incrementing = false;
 
    public function Beschikbaar(){
     return $this->belongsTo('\App\Models\Timetable', 'telefoonnummer', NULL);

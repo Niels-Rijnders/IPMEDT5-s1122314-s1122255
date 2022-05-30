@@ -15,7 +15,7 @@ class CreateTimetableTable extends Migration
     {
         Schema::create('timetable', function (Blueprint $table) {
             $table->id();
-            $table->float("time");
+            $table->string("time");
             $table->integer("telefoonnummer")->nullable();
 
         });
