@@ -24,7 +24,7 @@ Creeër tabel
             </select>
         </section>
         <section class="create-form__section">
-            <button class="create-form__button type="submit">tabel aanmaken</button>
+            <button class="create-form__button type="submit">Plek reserveren</button>
         </section>
     </form>
     <button class="tabelCard__button " onclick="window.location.href='/tabel'">Terug naar de tabel</button>
