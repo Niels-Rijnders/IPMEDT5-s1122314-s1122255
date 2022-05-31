@@ -274,6 +274,24 @@ body{
     grid-template-columns: repeat(12,minmax(0,1fr));
 }
 
+@media(max-width: 1200px){
+    .u-grid-12{
+        grid-template-columns: repeat(6,minmax(0,1fr));
+    }
+}
+
+@media(max-width: 750px){
+    .u-grid-12{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+
+@media(max-width: 350px){
+    .u-grid-12{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+}
+
 .tabel{
     background: rgb(0,90,71);
     background: linear-gradient(0deg, rgba(0,90,71,1) 20%, rgba(46, 204, 113) 20%, rgba(46, 204, 113) 40%, rgba(0,90,71,1) 40%, rgba(0,90,71,1) 60%, rgba(46, 204, 113) 60%, rgba(46, 204, 113) 80%, rgba(0,90,71,1) 81%);
