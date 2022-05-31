@@ -21,7 +21,7 @@ for(let i = 0; i < 108; i++){
 function ochtendButton(){
     i = 0;
     while(i < 109){
-        if(i > 36){
+        if(i > 35){
             tijden[i].style.display = "none";
             i++;
         }else{
@@ -34,7 +34,7 @@ function ochtendButton(){
 function middagButton(){
     i = 0;
     while(i < 109){
-        if(i < 36 || i > 73){
+        if(i < 36 || i > 71){
             tijden[i].style.display = "none";
             i++;
         }else{
@@ -47,7 +47,7 @@ function middagButton(){
 function namiddagButton(){
     i = 0;
     while(i < 109){
-        if(i < 73){
+        if(i < 72){
             tijden[i].style.display = "none";
             i++;
         }else{
