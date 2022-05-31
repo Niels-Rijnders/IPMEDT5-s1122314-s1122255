@@ -6,13 +6,14 @@ let button_alles = document.getElementById("alles");
 
 let tijden = document.querySelectorAll("h2");
 let telefoonnummer = document.querySelectorAll("div");
-console.log(telefoonnummer[1].innerHTML);
+console.log(telefoonnummer[0].innerHTML);
 
 //tijden[73].style.display = "none";
 
 for(let i = 0; i < 108; i++){
+    console.log(telefoonnummer[0].innerHTML);
     telefoonnummer[i].style.display = "none";
-    if(!telefoonnummer.innerHTML === " "){
+    if(telefoonnummer[i].innerHTML !== ""){
         tijden[i].style.color = 'red';        
     }
 }
