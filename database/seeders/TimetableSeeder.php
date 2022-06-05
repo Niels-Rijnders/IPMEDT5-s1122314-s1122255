@@ -14,20 +14,20 @@ class TimetableSeeder extends Seeder
      */
     public function run()
     {
-        $timehour = 9.00;
-        $timeminute = 0.00;
+        $timehour = 900;
+        $timeminute = 0;
 
-        while($timehour <= 17.00){
-            if($timeminute <= 0.55){
+        while($timehour <= 1700){
+            if($timeminute <= 55){
                 $time = $timehour + $timeminute;
-                $time = number_format($time, 2);
+                //$time = number_format($time, 2);
                 DB::table('timetable')->insert([
                     'time' => $time,
                 ]);
-                $timeminute = $timeminute + 0.05;
+                $timeminute = $timeminute + 5;
             } else{
-                $timehour = $timehour + 1.00;
-                $timeminute = 0.00;
+                $timehour = $timehour + 100;
+                $timeminute = 0;
             }
             }
         }
