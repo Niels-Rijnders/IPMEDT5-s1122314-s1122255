@@ -23,6 +23,7 @@ class TimetableSeeder extends Seeder
                 //$time = number_format($time, 2);
                 DB::table('timetable')->insert([
                     'time' => $time,
+                    'telefoonnummer' => 0,
                 ]);
                 $timeminute = $timeminute + 5;
             } else{

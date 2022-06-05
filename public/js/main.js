@@ -13,7 +13,7 @@ console.log(telefoonnummer[0].innerHTML);
 for(let i = 0; i < 108; i++){
     console.log(telefoonnummer[0].innerHTML);
     telefoonnummer[i].style.display = "none";
-    if(telefoonnummer[i].innerHTML !== ""){
+    if(telefoonnummer[i].innerHTML !== "0"){
         tijden[i].style.color = 'red';        
     }
 }

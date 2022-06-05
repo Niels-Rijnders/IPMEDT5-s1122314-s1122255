@@ -38,7 +38,7 @@ class tabelController extends Controller
     }
 
     public function beschikbaar(){
-        $tijden = DB::table('timetable')->where('telefoonnummer', NULL)->get();
+        $tijden = DB::table('timetable')->where('telefoonnummer', 0)->get();
         return view('tabel.create', ['tijden' => $tijden]);
     }
 
