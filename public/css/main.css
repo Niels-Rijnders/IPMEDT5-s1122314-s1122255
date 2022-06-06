@@ -79,10 +79,10 @@ body{
     background: #039172;
     border: none;
     color: #eeeeee;
-    box-shadow: 0 0 5rem rgba(7, 104, 159, 0.7);
     transition: 0.2s all;
     margin-right: 2rem;
     margin-top: 2rem;
+    border-radius: 40%;
 }
 
 @media(max-width: 37.5rem){
@@ -99,7 +99,12 @@ body{
 
 .tabelCard__button:hover{
     cursor: pointer;
-    box-shadow: 0 0 5rem rgba(7, 104, 159, 1);
+    transform: translateY(-5px);
+}
+
+.tabelCard__button:active{
+    cursor: pointer;
+    transform: translateY(5px);
 }
 
 .gridCard{
