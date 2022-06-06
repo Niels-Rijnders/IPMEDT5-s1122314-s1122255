@@ -14,13 +14,6 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => "niels rijnders",
-            'email' => "s1122255@student.hsleiden.nl",
-            'password' => bcrypt('12176'),
-            'age' => 21,
-            'role' => "Admin",
-        ]);
 
         DB::table('users')->insert([
             'name' => "niels rijnders",
@@ -28,13 +21,6 @@ class UsersTableSeeder extends Seeder
             'password' => bcrypt('12345'),
             'age' => 21,
             'role' => "Admin",
-        ]);
-
-        DB::table('users')->insert([
-            'name' => "shinobu oshino",
-            'email' => "s1122266@student.hsleiden.nl",
-            'password' => bcrypt('12176'),
-            'age' => 17,
         ]);
     }
 }

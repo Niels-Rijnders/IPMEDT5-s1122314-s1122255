@@ -25,10 +25,6 @@ Route::middleware(['auth'])->group(function() {
     Route::get('/tabel', [\App\Http\Controllers\tabelController::class, 'tabel']);
 });
 
-Route::middleware(['auth','age'])->group(function() {
-    Route::get('/drinks', [App\Http\Controllers\DrinksController::class, 'index']);
-});
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
