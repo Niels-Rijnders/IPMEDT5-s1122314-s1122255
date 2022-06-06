@@ -7,11 +7,11 @@
 @section('content')
     <ul class="u-grid-12 u-grid-gap-2">
         <h1 class="gridCard__heading">Beschikbare tijden</h1><br>
-        <button class="tabelCard__button " onclick="window.location.href='/tabel/create'"><u>Tijd reserveren</u></button>
-        <button class="tabelCard__button " onclick="ochtendButton()" id="ochtend"><u>Ochtend</u></button>
-        <button class="tabelCard__button " onclick="middagButton()" id="middag"><u>Middag</u></button>
-        <button class="tabelCard__button " onclick="namiddagButton()" id="namiddag"><u>Na-middag</u></button>
-        <button class="tabelCard__button " onclick="allesButton()" id="alles"><u>Alle tijden</u></button>
+        <button class="tabelCard__button " onclick="window.location.href='/tabel/create'">Tijd reserveren</button>
+        <button class="tabelCard__button " onclick="ochtendButton()" id="ochtend">Ochtend</button>
+        <button class="tabelCard__button " onclick="middagButton()" id="middag">Middag</button>
+        <button class="tabelCard__button " onclick="namiddagButton()" id="namiddag">Na-middag</button>
+        <button class="tabelCard__button " onclick="allesButton()" id="alles">Alle tijden</button>
         <br>
         <li class="u-grid-12"></li>
         <li class="u-grid-12"></li>
