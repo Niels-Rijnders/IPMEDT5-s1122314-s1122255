@@ -12,7 +12,7 @@ class tabelController extends Controller
             'tabel' => \App\Models\tabel::all()
         ]);
     }
-    
+    /*deze functie haalt alle telefoonnummers uit de tabel waar het telefoonnummer 0 oftewel leeg is */
     public function show($id){
             $tijden = DB::table('timetable')->where('telefoonnummer', 0)->get();
             return view('tabel.show', [
@@ -26,7 +26,8 @@ class tabelController extends Controller
             'images' => \App\Models\Image::all(),
         ]);
     }
-
+    /*deze functie word gebruikt bij het reserveren waar bij het opgegeven tijdslot het nieuwe telefoonnummer
+    in de tabel word gezet */
     public function store(Request $request, \App\Models\Timetable $timetable){
         $timetable->time = $request->input('time');
         $timetable->telefoonnummer = $request->input('telefoonnummer');
@@ -41,7 +42,7 @@ class tabelController extends Controller
         $tijden = DB::table('timetable')->where('telefoonnummer', 0)->get();
         return view('tabel.create', ['tijden' => $tijden]);
     }
-
+    /*deze functie haalt de hele tabel op */
     public function tabel(){
         $tijden = DB::table('timetable')->get();
         return view('tabel.timetable', ['tijden' => $tijden]);

@@ -18,6 +18,8 @@ Creeër tabel
         <section class="create-form__section">
             <label for="kind">Tijdslot </label>
             <select class="create-form__input" id="time" name="time">
+                <!--Deze site gebruikt de functie uit de tabel controller die alleen maar tijden meegeeft die niet 
+                op 0 staan. daardoor zijn de enige tijden die je kan selecteren de tijden die nog beschikbaar zijn. -->
                 @foreach($tijden as $tijd)
                     <option value={{$tijd->time}}> {{$tijd->time}} </option>
                 @endforeach
