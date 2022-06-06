@@ -14,9 +14,9 @@ class tabelController extends Controller
     }
     
     public function show($id){
-
-        return view('tabel.show', [
-            'tabel' => \App\Models\tabel::find($id),
+            $tijden = DB::table('timetable')->where('telefoonnummer', 0)->get();
+            return view('tabel.show', [
+                'tijden' => \App\Models\Timetable::find($id),
         ]);
     }
 

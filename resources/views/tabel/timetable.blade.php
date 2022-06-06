@@ -21,7 +21,8 @@
         <li class="u-grid-12"></li>
         <li class="u-grid-12"></li>
         @foreach($tijden as $tijd)
-        <li class="u-grid-12 tabel" id="{{$tijd->time}}" data-kind-of-tabel={{$tijd->time}}>
+        <li class="u-grid-12 tabel" id="{{$tijd->time}}" data-kind-of-tabel={{$tijd->time}} href>
+        <a href="/tabel/{{$tijd->id}}">
             <h2 class="gridCard__heading" > {{$tijd->time}} </h2>
         </li>
         <div class="role" id="telefoonnummer">{{$tijd->telefoonnummer}}</div>
